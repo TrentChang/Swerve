@@ -52,9 +52,7 @@ public class Positionestimate extends SubsystemBase {
     @Override
     public void periodic() {
         // Display the distance and tx, ty, ta values on SmartDashboard
-        SmartDashboard.putNumber("Distance to Goal (inches)", calculateDistanceToGoal());
-        SmartDashboard.putNumber("LimelightX", getTx());
-        SmartDashboard.putNumber("LimelightY", getTy());
-        SmartDashboard.putNumber("LimelightArea", getTa());
+
+        SmartDashboard.putNumber("Apriltag to robot distance (inches)", calculateDistanceToGoal());
     }
 }
